@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(35deg, #f15e64, #eaa404);
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+section aside {
+    width: 350px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+section aside h1 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+section aside h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    color: black;
+    font-weight: normal;
+}
+
+input[type=text],
+input[type=senha] {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    font-size: 16px;
+    margin: 8px 0;
+    color: black;
+    background-color: white;
+    border: white solid 1px;
+    border-radius: 3px;
+    transition: 0.3 all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input[type=text]:focus,
+input[type=senha]:focus {
+    transform: scale(1.2);
+}
+
+button[type=submit] {
+    margin: 8px 0;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: #f15e64;
+    padding: 8px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2 all ease-in-out;
+}
+
+button[type=submit]:hover {
+    background-color: #eaa404;
+}
+
+section aside p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+section aside p a {
+    color: #f15e64;
+    text-decoration: underline;
+}
+
+section aside p a:hover {
+    text-decoration: none;
+}
